@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="170dp"
+    android:layout_height="180dp"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rlHis">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="6dp"
+            android:textSize="18sp"
+            android:text="Book name"
+            android:maxLength="10"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:id="@+id/txtRecyclerBookNameHis"/>
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:layout_below="@+id/txtRecyclerBookNameHis"
+            android:id="@+id/imgBookHis"/>
+
+        <TextView
+            android:id="@+id/txtRecyclerBookAuthorHis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:maxLength="12"
+            android:padding="6dp"
+            android:layout_below="@+id/imgBookHis"
+            android:text="Author name"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.BookDescriptionActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="325dp"
+        android:layout_margin="6dp"
+        android:background="@drawable/app_bg"
+        android:id="@+id/rlRecyclerDescHead">
+
+        <TextView
+            android:id="@+id/txtRecyclerDescTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="6dp"
+            android:layout_centerHorizontal="true"
+            android:text="Title"
+            android:textSize="22sp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textAllCaps="true"/>
+
+        <ImageView
+            android:id="@+id/imgBookDesc"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            android:layout_below="@+id/txtRecyclerDescTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/txtRecyclerDescAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgBookDesc"
+            android:layout_centerHorizontal="true"
+            android:textColor="#fff"
+            android:layout_marginTop="8dp"
+            android:textSize="20sp"
+            android:text="Author"/>
+
+        <TextView
+            android:id="@+id/txtRecyclerDescPublisher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtRecyclerDescAuthor"
+            android:layout_centerHorizontal="true"
+            android:textColor="#fff"
+            android:layout_marginTop="8dp"
+            android:textSize="20sp"
+            android:text="Publisher"/>
+
+        <TextView
+            android:id="@+id/txtRecyclerDescPublishDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtRecyclerDescPublisher"
+            android:layout_centerHorizontal="true"
+            android:textColor="#fff"
+            android:layout_marginTop="8dp"
+            android:textSize="20sp"
+            android:text="PublishDate"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About the book"
+        android:layout_centerInParent="true"
+        android:textSize="18sp"
+        android:layout_below="@+id/rlRecyclerDescHead"
+        android:id="@+id/txtAbtBook"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAbtBook"
+        android:layout_margin="6dp">
+
+        <TextView
+            android:id="@+id/txtBookDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book Description"
+            android:padding="15dp"
+            android:textColor="#000"
+            android:textSize="19sp"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"/>
+
+    </ScrollView>
+
+</RelativeLayout>
